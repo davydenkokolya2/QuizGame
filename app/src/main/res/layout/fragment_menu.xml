@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".ui.menu.MenuFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/icon_card_line"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFourthCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnFirstCard"
+        app:layout_constraintStart_toStartOf="@+id/btnFirstCard" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_background_button_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_button_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/btnFirstCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/icon_background_first_card"
+        app:layout_constraintBottom_toTopOf="@+id/btnSecondCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/btnSecondCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/icon_background_second_card"
+        app:layout_constraintBottom_toTopOf="@+id/btnThirdCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnFirstCard"
+        app:layout_constraintStart_toStartOf="@+id/btnFirstCard"
+        app:layout_constraintTop_toBottomOf="@+id/btnFirstCard" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/icon_card_line"
+        app:layout_constraintBottom_toBottomOf="@+id/btnThirdCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnFirstCard"
+        app:layout_constraintStart_toStartOf="@+id/btnFirstCard" />
+
+    <ImageView
+        android:id="@+id/btnThirdCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/icon_background_fourth_card"
+        app:layout_constraintBottom_toTopOf="@+id/btnFourthCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnSecondCard"
+        app:layout_constraintStart_toStartOf="@+id/btnSecondCard"
+        app:layout_constraintTop_toBottomOf="@+id/btnSecondCard" />
+
+    <ImageView
+        android:id="@+id/btnFourthCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_background_third_card"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/btnThirdCard"
+        app:layout_constraintStart_toStartOf="@+id/btnThirdCard"
+        app:layout_constraintTop_toBottomOf="@+id/btnThirdCard" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icon_cup"
+        app:layout_constraintEnd_toEndOf="@+id/btnFirstCard"
+        app:layout_constraintTop_toTopOf="@+id/btnFirstCard" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/icon_books"
+        app:layout_constraintEnd_toEndOf="@+id/btnSecondCard"
+        app:layout_constraintTop_toTopOf="@+id/btnSecondCard" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/icon_books"
+        app:layout_constraintEnd_toEndOf="@+id/btnThirdCard"
+        app:layout_constraintTop_toTopOf="@+id/btnThirdCard" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/icon_books"
+        app:layout_constraintEnd_toEndOf="@+id/btnFourthCard"
+        app:layout_constraintTop_toTopOf="@+id/btnFourthCard" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/quiz"
+        android:textColor="@color/personal_white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnFirstCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnFirstCard"
+        app:layout_constraintStart_toStartOf="@+id/btnFirstCard" />
+
+    <TextView
+        android:id="@+id/tvTestName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/biology_test"
+        android:textColor="@color/personal_white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFirstCard"
+        app:layout_constraintStart_toStartOf="@+id/btnFirstCard"
+        app:layout_constraintTop_toTopOf="@+id/btnFirstCard" />
+
+    <TextView
+        android:id="@+id/tvTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/_0h_20m"
+        android:textColor="@color/dark_blue"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFirstCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnFirstCard"
+        app:layout_constraintStart_toStartOf="@+id/btnFirstCard"
+        app:layout_constraintTop_toTopOf="@+id/btnFirstCard" />
+
+    <TextView
+        android:id="@+id/tvBottomRight1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/entry_people_200_seats"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFirstCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnFirstCard" />
+
+    <TextView
+        android:id="@+id/tvTestName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/physical_test"
+        android:textColor="@color/personal_white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSecondCard"
+        app:layout_constraintStart_toStartOf="@+id/btnSecondCard"
+        app:layout_constraintTop_toTopOf="@+id/btnSecondCard" />
+
+    <TextView
+        android:id="@+id/tvTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/_0h_20m"
+        android:textColor="@color/dark_blue"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSecondCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnSecondCard"
+        app:layout_constraintStart_toStartOf="@+id/btnSecondCard"
+        app:layout_constraintTop_toTopOf="@+id/btnSecondCard" />
+
+    <TextView
+        android:id="@+id/tvBottomRight2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/entry_people_200_seats"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSecondCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnSecondCard" />
+
+    <TextView
+        android:id="@+id/tvTestName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@color/personal_white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnThirdCard"
+        app:layout_constraintStart_toStartOf="@+id/btnThirdCard"
+        app:layout_constraintTop_toTopOf="@+id/btnThirdCard" />
+
+    <TextView
+        android:id="@+id/tvTime3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/_0h_20m"
+        android:textColor="@color/dark_blue"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnThirdCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnThirdCard"
+        app:layout_constraintStart_toStartOf="@+id/btnThirdCard"
+        app:layout_constraintTop_toTopOf="@+id/btnThirdCard" />
+
+    <TextView
+        android:id="@+id/tvBottomRight3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/entry_people_200_seats"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnThirdCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnThirdCard" />
+
+    <TextView
+        android:id="@+id/tvTestName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@color/personal_white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFourthCard"
+        app:layout_constraintStart_toStartOf="@+id/btnFourthCard"
+        app:layout_constraintTop_toTopOf="@+id/btnFourthCard" />
+
+    <TextView
+        android:id="@+id/tvTime4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/_0h_20m"
+        android:textColor="@color/dark_blue"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFourthCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnFourthCard"
+        app:layout_constraintStart_toStartOf="@+id/btnFourthCard"
+        app:layout_constraintTop_toTopOf="@+id/btnFourthCard" />
+
+    <TextView
+        android:id="@+id/tvBottomRight4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/entry_people_200_seats"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFourthCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnFourthCard" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/icon_card_line"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFirstCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnFirstCard"
+        app:layout_constraintStart_toStartOf="@+id/btnFirstCard" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/icon_card_line"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSecondCard"
+        app:layout_constraintEnd_toEndOf="@+id/btnFirstCard"
+        app:layout_constraintStart_toStartOf="@+id/btnFirstCard" />
+</androidx.constraintlayout.widget.ConstraintLayout>

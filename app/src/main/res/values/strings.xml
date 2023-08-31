@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">QuizGame</string>
+    <string name="onboarding">You have a unique chance to test your logic and intuition, and maybe your knowledge! Choose a match and try to guess the outcome. If you can\'t choose a match by yourself, our great random function does it for you!</string>
+    <string name="_0_0">0/0</string>
+    <string name="question_1">Question - 1</string>
+    <string name="what_is_part_of_javascript">What is part of Javascript?</string>
+    <string name="coundown">Coundown</string>
+    <string name="_20_00">20:00</string>
+    <string name="entry_people_200_seats">entry people - 200 seats</string>
+    <string name="_0h_20m">0h:20m</string>
+    <string name="physical_test">Physical test</string>
+    <string name="biology_test">Biology test</string>
+    <string name="quiz">Quiz</string>
+
 </resources>

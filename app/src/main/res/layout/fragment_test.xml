@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".ui.test.TestFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/icon_background_progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTypeTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@color/personal_white"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvNumberQuestionProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/_0_0"
+        android:textColor="@color/dark_blue"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvNumberQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="94dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/question_1"
+        android:textColor="@color/personal_white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/btnAnswer1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/what_is_part_of_javascript"
+        android:textColor="@color/dark_blue"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnswer1"
+        app:layout_constraintStart_toStartOf="@+id/tvNumberQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumberQuestion" />
+
+    <ImageView
+        android:id="@+id/btnAnswer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/icon_background_answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
+
+    <ImageView
+        android:id="@+id/btnAnswer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_background_answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnswer1" />
+
+    <ImageView
+        android:id="@+id/btnAnswer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_background_answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnswer2" />
+
+    <ImageView
+        android:id="@+id/btnAnswer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_background_answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnswer3" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_background_button_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnHomeTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_button_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+    <ImageView
+        android:id="@+id/ivFalseAnswer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/icon_false_answer"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnswer1"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/btnAnswer1"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/ivFalseAnswer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/icon_false_answer"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnswer2"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/btnAnswer2"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/ivFalseAnswer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/icon_false_answer"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnswer3"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/btnAnswer3"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/ivFalseAnswer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/icon_false_answer"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnswer4"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/btnAnswer4"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/ivTrueAnswer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_true_answer"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFalseAnswer1"
+        app:layout_constraintEnd_toEndOf="@+id/ivFalseAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/ivFalseAnswer1" />
+
+    <ImageView
+        android:id="@+id/ivTrueAnswer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_true_answer"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFalseAnswer2"
+        app:layout_constraintEnd_toEndOf="@+id/ivFalseAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/ivFalseAnswer2" />
+
+    <ImageView
+        android:id="@+id/ivTrueAnswer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_true_answer"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFalseAnswer3"
+        app:layout_constraintEnd_toEndOf="@+id/ivFalseAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/ivFalseAnswer3" />
+
+    <ImageView
+        android:id="@+id/ivTrueAnswer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_true_answer"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFalseAnswer4"
+        app:layout_constraintEnd_toEndOf="@+id/ivFalseAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/ivFalseAnswer4" />
+
+    <TextView
+        android:id="@+id/tvAnswer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@color/dark_blue"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnswer1"
+        app:layout_constraintEnd_toStartOf="@+id/ivFalseAnswer1"
+        app:layout_constraintStart_toStartOf="@+id/btnAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/btnAnswer1" />
+
+    <TextView
+        android:id="@+id/tvAnswer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@color/dark_blue"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnswer2"
+        app:layout_constraintEnd_toStartOf="@+id/ivFalseAnswer1"
+        app:layout_constraintStart_toStartOf="@+id/btnAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/btnAnswer2" />
+
+    <TextView
+        android:id="@+id/tvAnswer3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@color/dark_blue"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnswer3"
+        app:layout_constraintEnd_toStartOf="@+id/ivFalseAnswer1"
+        app:layout_constraintStart_toStartOf="@+id/btnAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/btnAnswer3" />
+
+    <TextView
+        android:id="@+id/tvAnswer4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins"
+        android:text=""
+        android:textColor="@color/dark_blue"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnswer4"
+        app:layout_constraintEnd_toStartOf="@+id/ivFalseAnswer1"
+        app:layout_constraintStart_toStartOf="@+id/btnAnswer1"
+        app:layout_constraintTop_toTopOf="@+id/btnAnswer4" />
+
+    <ImageView
+        android:id="@+id/btnNextQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/icon_button_next_questions"
+        app:layout_constraintBottom_toTopOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:progressDrawable="@drawable/custom_progress_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/tvNumberQuestionProgress"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:progressDrawable="@drawable/custom_progress"
+        app:layout_constraintBottom_toTopOf="@+id/tvNumberQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/coundown"
+        android:textColor="@color/personal_white"
+        android:textSize="4sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+        app:layout_constraintStart_toStartOf="@+id/progressBar2" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/_20_00"
+        android:textColor="@color/personal_white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+        app:layout_constraintStart_toStartOf="@+id/progressBar2"
+        app:layout_constraintTop_toTopOf="@+id/progressBar2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
